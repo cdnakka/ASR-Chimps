@@ -89,7 +89,7 @@ for j in range(0,RECORD_SECONDS):
     inf.append(load_sound_files("output_{}.wav".format(j)))
     inf_pred = inf_model.predict_classes(np.array(inf))
     print(inf_pred)
-    if inf_pred[0] == 10:
+    if inf_pred[0] == 11:
         print("Chimp!")
         
 print("* done recording")
