@@ -93,7 +93,7 @@ if __name__ == '__main__':
     a = Predict(curdir, i_t)
     out_dict = a.generate_log()
 
+    text_file = open("log.txt", "w")
     for k, v in out_dict.items():
-        text_file = open("log.txt", "w")
         text_file.write(k + "->" + str(v) + "\n")
-        text_file.close()
+    text_file.close()
